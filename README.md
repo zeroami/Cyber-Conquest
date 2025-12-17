@@ -2,7 +2,7 @@
 
 > "No temas a las máquinas, teme a tu falta de conocimiento sobre ellas."
 
-Bienvenido al repositorio central de entrenamiento en Ciberseguridad. Este proyecto documenta el viaje desde los fundamentos de Linux hasta la explotación de binarios y la gobernanza legal.
+Bienvenido al repositorio central de entrenamiento en Ciberseguridad. Este proyecto documenta el viaje desde los fundamentos defensivos hasta la explotación y la gobernanza.
 
 ---
 
@@ -10,13 +10,12 @@ Bienvenido al repositorio central de entrenamiento en Ciberseguridad. Este proye
 
 Haz clic en cada módulo para acceder al manual de operaciones:
 
-### 🟢 Fase 1: Fundamentos
-| Mundo | Temática | Estado |
+### 🟢 Fase 1: Fundamentos y Defensa
+| Mundo | Temática | Archivo Maestro |
 | :--- | :--- | :--- |
-| **[Mundo 0: Setup Inicial](./00-Kata-Inicial)** | Configuración de Kali Linux y Entorno. | ✅ Listo |
-| **[Mundo 1: Torre de Control](./01-La-Torre-De-Control)** | Comandos de Linux y Bash Scripting. | ✅ Listo |
-| **[Mundo 2: Laberinto de Red](./02-El-Laberinto-Red)** | Networking, TCP/IP y Análisis de Tráfico. | ✅ Listo |
-| **[Mundo 3: Caverna SQL](./03-La-Caverna-SQL)** | Bases de Datos y SQL Injection. | ✅ Listo |
+| **Mundo 1** | 🛡️ Defensa y Protocolos | [📖 Manual de Defensa](./01-Bastion-Protocolo/Manual_Defensa.md) |
+| **Mundo 2** | 🎭 Ingeniería Social | [📖 Guía de Ingeniería Social](./02-Carnaval-Sombras/Guia_Ingenieria_Social.md) |
+| **Mundo 3** | 🕸️ Hacking Web | [📖 Grimorio Web](./03-Laberinto-Web/Grimorio_Web.md) |
 
 ### 🔴 Fase 2: Ofensiva (Red Team)
 | Mundo | Temática | Archivo Maestro |
@@ -25,7 +24,7 @@ Haz clic en cada módulo para acceder al manual de operaciones:
 | **Mundo 5** | 🧪 Exploits & Buffer Overflow | [📖 Deep Dive: Buffer Overflow](./05-Taller-Exploits/DeepDive_BufferOverflow.md) |
 | **Mundo 6** | 📡 Hacking WiFi & Radio | [📖 Guía de Auditoría Wireless](./06-Mar-Frecuencias/Guia_Wifi.md) |
 
-### 🔵 Fase 3: Defensiva y Estrategia
+### 🔵 Fase 3: Estrategia y Legalidad
 | Mundo | Temática | Archivo Maestro |
 | :--- | :--- | :--- |
 | **Mundo 7** | 🔐 Criptografía | [📖 Fundamentos de Cifrado](./07-Camara-Enigma/Manual_Criptografia.md) |
@@ -41,3 +40,4 @@ Haz clic en cada módulo para acceder al manual de operaciones:
 ## ⚠️ Disclaimer
 Este repositorio tiene fines puramente **educativos y académicos**.
 El uso de estas técnicas contra sistemas sin autorización previa y por escrito es ilegal. Consulta la [Guía Legal](./08-Gobernanza/Guia_Legal.md) antes de ejecutar cualquier script.
+___
