@@ -1,72 +1,43 @@
-# 💀 CYBER-CONQUEST: La Arena Digital
+# 🚩 Cyber-Conquest: Training Ground
 
-[![Status](https://img.shields.io/badge/Status-Active-success)]()
-[![Python](https://img.shields.io/badge/Python-3.9%2B-blue)]()
-[![License](https://img.shields.io/badge/License-MIT-green)]()
+> "No temas a las máquinas, teme a tu falta de conocimiento sobre ellas."
 
-**Bienvenido a Cyber-Conquest.**
-
-Este repositorio no es solo una colección de notas; es una **plataforma de aprendizaje gamificado** diseñada para estructurar el conocimiento de 100 libros fundamentales de seguridad informática.
-
-El objetivo es transformar la teoría estática en una **aventura interactiva** donde cada commit es un paso más hacia la maestría en ciberseguridad.
-
-## 🗺️ El Mapa del Mundo (Roadmap)
-
-El contenido está organizado en 8 "Mundos Temáticos" que cubren desde los fundamentos hasta la gestión ejecutiva de la seguridad:
-
-### 1. 🏰 [El Bastión del Protocolo](./01-Bastion-Protocolo)
-* **Enfoque:** Fundamentos de Redes, TCP/IP y Arquitectura.
-* **Herramientas:** Wireshark, Nmap.
-* **Conceptos Clave:** Filtrado de paquetes (Stateful vs Static), IPv6 y Protocolos de descubrimiento.
-
-### 2. 🎭 [El Carnaval de las Sombras](./02-Carnaval-Sombras)
-* **Enfoque:** Ingeniería Social y Seguridad Física.
-* **Misiones:** Análisis de pretextos, OSINT y suplantación de identidad.
-* **Conceptos Clave:** Psicología del engaño, políticas de acceso físico.
-
-### 3. 🏛️ [El Laberinto de los Datos Ocultos](./03-Laberinto-Web)
-* **Enfoque:** Hacking Web y Bases de Datos.
-* **Herramientas:** Burp Suite, SQLMap.
-* **Conceptos Clave:** Blind SQL Injection, XSS (Cross-Site Scripting) y OWASP Top 10.
-
-### 4. 🧪 [El Laboratorio del Alquimista Binario](./04-Laboratorio-Binario)
-* **Enfoque:** Malware, Virus y Reversing.
-* **Herramientas:** IDA Pro, Debuggers.
-* **Conceptos Clave:** Análisis de bytecode, ofuscación y comportamiento viral.
-
-### 5. 🔨 [El Taller de las Grietas](./05-Taller-Exploits)
-* **Enfoque:** Desarrollo de Exploits y Pentesting.
-* **Herramientas:** Metasploit Framework, Shellcode.
-* **Conceptos Clave:** Buffer Overflow, gestión de memoria (Stack/Heap).
-
-### 6. 🌊 [El Mar de las Frecuencias](./06-Mar-Frecuencias)
-* **Enfoque:** Seguridad Wireless y Radiofrecuencia.
-* **Herramientas:** Aircrack-ng, Kismet.
-* **Conceptos Clave:** WEP/WPA Cracking, Modo Monitor e inyección de paquetes.
-
-### 7. 🔐 [La Cripta del Cifrado](./07-Cripta-Cifrado)
-* **Enfoque:** Criptografía y Túneles Seguros.
-* **Conceptos Clave:** VPNs, Esteganografía vs Criptografía, Hashes y PKI.
-
-### 8. 👑 [El Trono de la Gobernanza](./08-Trono-Gobernanza)
-* **Enfoque:** Gestión, CISSP y Cumplimiento.
-* **Conceptos Clave:** Auditoría, Gestión de Identidades (IAM) y respuesta a incidentes.
+Bienvenido al repositorio central de entrenamiento en Ciberseguridad. Este proyecto documenta el viaje desde los fundamentos de Linux hasta la explotación de binarios y la gobernanza legal.
 
 ---
 
-## 🚀 Instalación de la Plataforma
+## 🗺️ Mapa de Mundos
 
-Este repositorio incluye una aplicación interactiva en Python (`Streamlit`) para navegar el contenido como si fuera un videojuego.
+Haz clic en cada módulo para acceder al manual de operaciones:
 
-```bash
-# Clonar el repositorio
-git clone [https://github.com/zeroami/cyber-conquest.git](https://github.com/zeroami/cyber-conquest.git)
+### 🟢 Fase 1: Fundamentos
+| Mundo | Temática | Estado |
+| :--- | :--- | :--- |
+| **[Mundo 0: Setup Inicial](./00-Kata-Inicial)** | Configuración de Kali Linux y Entorno. | ✅ Listo |
+| **[Mundo 1: Torre de Control](./01-La-Torre-De-Control)** | Comandos de Linux y Bash Scripting. | ✅ Listo |
+| **[Mundo 2: Laberinto de Red](./02-El-Laberinto-Red)** | Networking, TCP/IP y Análisis de Tráfico. | ✅ Listo |
+| **[Mundo 3: Caverna SQL](./03-La-Caverna-SQL)** | Bases de Datos y SQL Injection. | ✅ Listo |
 
-# Entrar en el directorio
-cd cyber-conquest
+### 🔴 Fase 2: Ofensiva (Red Team)
+| Mundo | Temática | Archivo Maestro |
+| :--- | :--- | :--- |
+| **Mundo 4** | 🦠 Malware y Virus | [📖 Manual de Análisis de Malware](./04-Laboratorio-Binario/Manual_Malware.md) |
+| **Mundo 5** | 🧪 Exploits & Buffer Overflow | [📖 Deep Dive: Buffer Overflow](./05-Taller-Exploits/DeepDive_BufferOverflow.md) |
+| **Mundo 6** | 📡 Hacking WiFi & Radio | [📖 Guía de Auditoría Wireless](./06-Mar-Frecuencias/Guia_Wifi.md) |
 
-# Instalar dependencias
-pip install -r requirements.txt
+### 🔵 Fase 3: Defensiva y Estrategia
+| Mundo | Temática | Archivo Maestro |
+| :--- | :--- | :--- |
+| **Mundo 7** | 🔐 Criptografía | [📖 Fundamentos de Cifrado](./07-Camara-Enigma/Manual_Criptografia.md) |
+| **Mundo 8** | ⚖️ Gobernanza y Leyes | [📖 Guía Legal y Ética (GRC)](./08-Gobernanza/Guia_Legal.md) |
 
-# Iniciar la plataforma
-streamlit run app_hacking.py
+---
+
+## 🛠️ Herramientas Utilizadas
+* **OS:** Kali Linux / Parrot OS
+* **Code:** Python, Bash, C
+* **Tools:** Nmap, Wireshark, Metasploit, GDB, Aircrack-ng.
+
+## ⚠️ Disclaimer
+Este repositorio tiene fines puramente **educativos y académicos**.
+El uso de estas técnicas contra sistemas sin autorización previa y por escrito es ilegal. Consulta la [Guía Legal](./08-Gobernanza/Guia_Legal.md) antes de ejecutar cualquier script.
