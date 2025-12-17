@@ -6,7 +6,7 @@
 
 **Bienvenido a Cyber-Conquest.**
 
-Este repositorio no es solo una colección de notas; es una **plataforma de aprendizaje gamificado** diseñada para estructurar el conocimiento de más de 80 libros fundamentales de seguridad informática.
+Este repositorio no es solo una colección de notas; es una **plataforma de aprendizaje gamificado** diseñada para estructurar el conocimiento de 100 libros fundamentales de seguridad informática.
 
 El objetivo es transformar la teoría estática en una **aventura interactiva** donde cada commit es un paso más hacia la maestría en ciberseguridad.
 
