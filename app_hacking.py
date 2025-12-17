@@ -24,7 +24,7 @@ def banner():
     print(" ██║       ╚██╔╝  ██╔══██╗██╔══╝  ██╔══██╗")
     print(" ╚██████╗   ██║   ██████╔╝███████╗██║  ██║")
     print("  ╚═════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═╝")
-    print("          CONQUEST: CYBER SECURITY GAME   ")
+    print("          CONQUEST: CYBER SECURITY GAME by github.com/zeroami  ")
     print(f"            [ 2025 Edition - v1.2 ]       {bcolors.ENDC}\n")
 
 def main_menu():
