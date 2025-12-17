@@ -1,141 +1,94 @@
-import streamlit as st
-import pandas as pd
+import os
+import sys
 import time
 
-# --- CONFIGURACIÓN INICIAL ---
-st.set_page_config(
-    page_title="CYBER-CONQUEST",
-    page_icon="💀",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+# Colores para la terminal
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
 
-# Estilos CSS Hacker
-st.markdown("""
-    <style>
-    .stApp {background-color: #0e1117; color: #00ff41; font-family: 'Courier New', Courier, monospace;}
-    h1, h2, h3 {color: #00ff41 !important;}
-    .stButton>button {color: #0e1117; background-color: #00ff41; border: 1px solid #00ff41;}
-    .stButton>button:hover {background-color: #00cc33; border: 1px solid #00cc33;}
-    .stTextInput>div>div>input {color: #00ff41; background-color: #111;}
-    </style>
-    """, unsafe_allow_html=True)
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
 
-st.title("💀 CYBER-CONQUEST: Sistema de Entrenamiento")
-st.markdown("---")
+def banner():
+    print(f"{bcolors.OKCYAN}{bcolors.BOLD}")
+    print("  ██████╗██╗   ██╗██████╗ ███████╗██████╗ ")
+    print(" ██╔════╝╚██╗ ██╔╝██╔══██╗██╔════╝██╔══██╗")
+    print(" ██║      ╚████╔╝ ██████╔╝█████╗  ██████╔╝")
+    print(" ██║       ╚██╔╝  ██╔══██╗██╔══╝  ██╔══██╗")
+    print(" ╚██████╗   ██║   ██████╔╝███████╗██║  ██║")
+    print("  ╚═════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═╝")
+    print("          CONQUEST: CYBER SECURITY GAME   ")
+    print(f"            [ 2025 Edition - v1.2 ]       {bcolors.ENDC}\n")
 
-# --- NAVEGACIÓN ---
-st.sidebar.title("🗺️ Mapa del Mundo")
-mundo = st.sidebar.radio(
-    "Selecciona tu misión:",
-    ["Inicio", 
-     "1. 🏰 Bastión del Protocolo", 
-     "2. 🎭 Carnaval de las Sombras",
-     "3. 🏛️ Laberinto Web", 
-     "4. 🧪 Laboratorio Binario",
-     "5. 🔨 Taller de Exploits"]
-)
+def main_menu():
+    clear_screen()
+    banner()
+    print(f"{bcolors.HEADER}--- SELECCIONA TU MISIÓN ---{bcolors.ENDC}")
+    print(f"{bcolors.OKGREEN}1.{bcolors.ENDC} Mundo 1: Bastión y Protocolo (Defensa de Red)")
+    print(f"{bcolors.OKGREEN}2.{bcolors.ENDC} Mundo 2: Carnaval de Sombras (Ingeniería Social)")
+    print(f"{bcolors.OKGREEN}3.{bcolors.ENDC} Mundo 3: Ciudad Fantasma (Hacking Web - Bloqueado)")
+    print(f"{bcolors.OKGREEN}4.{bcolors.ENDC} Ver Aviso Legal (SECURITY.md)")
+    print(f"{bcolors.WARNING}0. Salir{bcolors.ENDC}")
+    
+    choice = input(f"\n{bcolors.BOLD}root@conquest:~# {bcolors.ENDC}")
+    return choice
 
-# --- MUNDO 1: REDES ---
-if mundo == "1. 🏰 Bastión del Protocolo":
-    st.header("🏰 Mundo 1: Defensa de Red")
-    tab1, tab2 = st.tabs(["📂 Teoría", "⚔️ Escáner Nmap"])
+def play_world_1():
+    clear_screen()
+    banner()
+    print(f"{bcolors.OKBLUE}[MUNDO 1: BASTIÓN Y PROTOCOLO]{bcolors.ENDC}")
+    print("Cargando módulos de defensa de red...")
+    time.sleep(1)
+    print(f"\n{bcolors.OKCYAN}OPCIONES:{bcolors.ENDC}")
+    print("a) Leer Manual de Defensa (Markdown)")
+    print("b) Lanzar Script de Honeyport (Trampa)")
+    print("c) Volver al menú")
     
-    with tab1:
-        st.markdown("### 🛡️ Firewalls: Stateful vs Stateless")
-        st.info("Stateless: Mira el paquete aislado.\nStateful: Mira el contexto de la conexión.")
-        st.markdown("### 🚇 VPN")
-        st.write("Túneles cifrados para proteger datos en redes públicas.")
+    sub_choice = input(f"\n{bcolors.BOLD}root@world1:~# {bcolors.ENDC}")
+    
+    if sub_choice == 'a':
+        os.system('cat 01-Bastion-Protocolo/Manual_Defensa.md | more')
+    elif sub_choice == 'b':
+        print(f"{bcolors.FAIL}[!] Iniciando Honeyport... (Requiere permisos sudo){bcolors.ENDC}")
+        # Aquí lanzaría tu script .sh si existe en la carpeta
+        os.system('sudo bash 01-Bastion-Protocolo/honeyport.sh')
+    
+def play_world_2():
+    clear_screen()
+    banner()
+    print(f"{bcolors.HEADER}[MUNDO 2: CARNAVAL DE SOMBRAS]{bcolors.ENDC}")
+    print("Accediendo a la base de datos de psicología conductual...")
+    time.sleep(1)
+    os.system('cat 02-Carnaval-Sombras/Guia_Ingenieria_Social.md | more')
 
-    with tab2:
-        st.subheader("Simulador de Escaneo")
-        ip = st.text_input("IP Objetivo:", "192.168.1.50")
-        if st.button("Escanear"):
-            with st.spinner("Enviando sondas SYN..."):
-                time.sleep(1)
-            st.code(f"""
-            PORT   STATE SERVICE
-            22/tcp open  ssh
-            80/tcp open  http
-            """, language="bash")
-            st.warning("⚠️ Puerto 80 sin cifrar detectado.")
+def show_security():
+    clear_screen()
+    banner()
+    os.system('cat SECURITY.md | head -n 40') # Muestra el principio de los idiomas
+    input(f"\n{bcolors.BOLD}Presiona Enter para continuar...{bcolors.ENDC}")
 
-# --- MUNDO 2: INGENIERÍA SOCIAL ---
-elif mundo == "2. 🎭 Carnaval de las Sombras":
-    st.header("🎭 Mundo 2: Ingeniería Social")
-    st.subheader("El arte del engaño humano")
-    
-    col1, col2 = st.columns(2)
-    with col1:
-        st.markdown("### 🕵️‍♂️ Principios de Cialdini")
-        st.write("* **Autoridad:** 'Soy el CEO, hazlo ya'.")
-        st.write("* **Urgencia:** 'Tu cuenta será borrada en 1 hora'.")
-        st.write("* **Escasez:** 'Últimos 2 tickets disponibles'.")
-    
-    with col2:
-        st.markdown("### 📧 Reto: Detecta el Phishing")
-        st.code("""
-        De: soport@g0ogle.com
-        Asunto: ALERTA DE SEGURIDAD
-        Haga clic aquí para verificar su contraseña:
-        http://bit.ly/secure-google-login
-        """, language="text")
-        
-        opcion = st.radio("¿Es este correo legítimo?", ["Sí", "No, mira el remitente", "No, mira el enlace", "B y C son correctas"])
-        if st.button("Analizar Correo"):
-            if opcion == "B y C son correctas":
-                st.balloons()
-                st.success("¡CORRECTO! 'g0ogle.com' es typo-squating y el enlace es sospechoso.")
-            else:
-                st.error("Fallaste. Has sido hackeado.")
-
-# --- MUNDO 3: HACKING WEB ---
-elif mundo == "3. 🏛️ Laberinto Web":
-    st.header("🏛️ Mundo 3: Inyección SQL")
-    st.markdown("El servidor interpreta tu input como código.")
-    
-    st.subheader("💉 Laboratorio: SQL Injection (Login Bypass)")
-    st.write("Objetivo: Entrar como 'admin' sin saber la contraseña.")
-    
-    usuario = st.text_input("Usuario:", placeholder="Intenta: admin' OR '1'='1")
-    password = st.text_input("Contraseña:", type="password")
-    
-    # Simulador de Backend SQL Vulnerable
-    query = f"SELECT * FROM users WHERE user = '{usuario}' AND pass = '{password}'"
-    
-    st.markdown("**Consulta que ejecuta el servidor:**")
-    st.code(query, language="sql")
-    
-    if st.button("Login"):
-        if "OR '1'='1" in usuario or "OR 1=1" in usuario:
-            st.success("🔓 ¡ACCESO CONCEDIDO! Has manipulado la lógica booleana.")
-            st.json({"id": 1, "user": "admin", "role": "root", "secret": "FLAG{SQLI_MASTER}"})
-        elif usuario == "admin" and password == "1234":
-             st.warning("Acceso denegado. Contraseña incorrecta.")
+if __name__ == "__main__":
+    while True:
+        option = main_menu()
+        if option == '1':
+            play_world_1()
+        elif option == '2':
+            play_world_2()
+        elif option == '3':
+            print(f"{bcolors.FAIL}\n[!] ERROR: Acceso denegado. Completa los mundos anteriores.{bcolors.ENDC}")
+            time.sleep(2)
+        elif option == '4':
+            show_security()
+        elif option == '0':
+            print(f"{bcolors.OKBLUE}Saliendo del sistema... Adiós, Hacker.{bcolors.ENDC}")
+            break
         else:
-            st.error("Acceso denegado.")
-
-# --- MUNDO 5: EXPLOITS (Deep Dive) ---
-elif mundo == "5. 🔨 Taller de Exploits":
-    st.header("🔨 Mundo 5: Buffer Overflows")
-    st.write("Este módulo contiene material avanzado extraído de 'The Shellcoder's Handbook'.")
-    with st.expander("📖 Ver Anatomía del Stack"):
-        st.code("""
-        [ High Memory ]
-        +----------------+
-        | Return Address |  <-- OBJETIVO (EIP)
-        +----------------+
-        |   Saved EBP    |
-        +----------------+
-        |   Buffer A     |  <-- Entrada de datos
-        +----------------+
-        [ Low Memory  ]
-        """, language="text")
-        st.write("Si escribes más datos de los que caben en Buffer A, sobrescribes EBP y luego RET.")
-
-elif mundo == "Inicio":
-    st.write("Bienvenido al sistema central. Selecciona una misión.")
-    st.progress(0)
-
-else:
-    st.info("🚧 Módulo en construcción. Revisa los archivos .md en el repositorio.")
+            print(f"{bcolors.FAIL}Comando no reconocido.{bcolors.ENDC}")
+            time.sleep(1)
