@@ -1,6 +1,8 @@
 import streamlit as st
+import pandas as pd
+import time
 
-# Configuración de la página
+# --- CONFIGURACIÓN INICIAL ---
 st.set_page_config(
     page_title="CYBER-CONQUEST",
     page_icon="💀",
@@ -8,109 +10,132 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Estilos CSS para dar atmósfera hacker
+# Estilos CSS Hacker
 st.markdown("""
     <style>
-    .stApp {
-        background-color: #0e1117;
-        color: #00ff41;
-        font-family: 'Courier New', Courier, monospace;
-    }
-    h1, h2, h3 {
-        color: #00ff41 !important;
-    }
-    .stButton>button {
-        color: #0e1117;
-        background-color: #00ff41;
-        border: 1px solid #00ff41;
-    }
-    .stButton>button:hover {
-        background-color: #00cc33;
-        border: 1px solid #00cc33;
-    }
+    .stApp {background-color: #0e1117; color: #00ff41; font-family: 'Courier New', Courier, monospace;}
+    h1, h2, h3 {color: #00ff41 !important;}
+    .stButton>button {color: #0e1117; background-color: #00ff41; border: 1px solid #00ff41;}
+    .stButton>button:hover {background-color: #00cc33; border: 1px solid #00cc33;}
+    .stTextInput>div>div>input {color: #00ff41; background-color: #111;}
     </style>
     """, unsafe_allow_html=True)
 
-# Título Principal
 st.title("💀 CYBER-CONQUEST: Sistema de Entrenamiento")
 st.markdown("---")
 
-# Barra lateral - Navegación
+# --- NAVEGACIÓN ---
 st.sidebar.title("🗺️ Mapa del Mundo")
 mundo = st.sidebar.radio(
     "Selecciona tu misión:",
     ["Inicio", 
-     "1. 🏰 Bastión del Protocolo",
+     "1. 🏰 Bastión del Protocolo", 
      "2. 🎭 Carnaval de las Sombras",
      "3. 🏛️ Laberinto Web", 
      "4. 🧪 Laboratorio Binario",
-     "5. 🔨 Taller de Exploits",
-     "6. 🌊 Mar de Frecuencias",
-     "7. 🔐 Cripta del Cifrado",
-     "8. 👑 Trono de Gobernanza"]
+     "5. 🔨 Taller de Exploits"]
 )
 
-# --- LÓGICA DE PÁGINAS ---
-
-if mundo == "Inicio":
-    st.header("Bienvenido, Operador.")
-    st.write("""
-    Has accedido a la interfaz central de Cyber-Conquest. 
-    Este sistema consolida el conocimiento de más de 80 volúmenes de seguridad informática.
-    
-    ### ⚡ Estado del Sistema
-    - **Módulos Activos:** 8 Mundos
-    - **Nivel de Acceso:** Administrador
-    - **Objetivo:** Completar la ruta de certificación virtual.
-    """)
-    st.info("Selecciona un mundo en el menú lateral para comenzar el despliegue de información.")
-
-elif mundo == "1. 🏰 Bastión del Protocolo":
-    st.header("🏰 Mundo 1: El Bastión del Protocolo")
-    st.subheader("Redes, Firewalls y Protocolos de Defensa")
-    
-    tab1, tab2, tab3 = st.tabs(["📂 Archivos de Inteligencia", "⚔️ Simulador de Batalla", "📝 Quiz Rápido"])
+# --- MUNDO 1: REDES ---
+if mundo == "1. 🏰 Bastión del Protocolo":
+    st.header("🏰 Mundo 1: Defensa de Red")
+    tab1, tab2 = st.tabs(["📂 Teoría", "⚔️ Escáner Nmap"])
     
     with tab1:
-        st.markdown("### Conceptos Críticos Interceptados")
-        st.write("Datos recuperados de 'Network Security Bible' y manuales de campo.")
-        
-        with st.expander("🔥 Firewall: Static vs Stateful"):
-            st.write("""
-            **La diferencia vital:**
-            * **Static (Sin estado):** Mira el paquete aislado. ¿IP permitida? Pasa. (Rápido pero tonto).
-            * **Stateful (Con estado):** Mira el contexto. ¿Este paquete es respuesta a una petición que YO hice? (Más seguro).
-            """)
-            
-        with st.expander("🚇 VPN (Túneles Seguros)"):
-            st.write("""
-            Tecnología esencial para WANs. Crea un túnel cifrado sobre una red pública.
-            Es la base de la seguridad remota económica y robusta.
-            """)
+        st.markdown("### 🛡️ Firewalls: Stateful vs Stateless")
+        st.info("Stateless: Mira el paquete aislado.\nStateful: Mira el contexto de la conexión.")
+        st.markdown("### 🚇 VPN")
+        st.write("Túneles cifrados para proteger datos en redes públicas.")
 
     with tab2:
-        st.markdown("### 📡 Escáner de Puertos Activo")
-        target_ip = st.text_input("Ingresa IP Objetivo (Simulada):", "192.168.1.1")
-        if st.button("Iniciar Escaneo Nmap"):
+        st.subheader("Simulador de Escaneo")
+        ip = st.text_input("IP Objetivo:", "192.168.1.50")
+        if st.button("Escanear"):
+            with st.spinner("Enviando sondas SYN..."):
+                time.sleep(1)
             st.code(f"""
-            Iniciando Nmap 7.92 en {target_ip}...
-            PORT     STATE SERVICE
-            21/tcp   open  ftp
-            22/tcp   open  ssh
-            80/tcp   open  http
-            Scanning completed in 0.45 seconds
+            PORT   STATE SERVICE
+            22/tcp open  ssh
+            80/tcp open  http
             """, language="bash")
-            st.warning("⚠️ ¡Alerta! Puerto FTP (21) detectado abierto. Vector de ataque potencial.")
+            st.warning("⚠️ Puerto 80 sin cifrar detectado.")
 
-    with tab3:
-        st.write("### Prueba de Conocimiento")
-        ans = st.radio("¿Qué protocolo reemplaza a ARP en IPv6?", ["ICMPv6", "Neighbor Discovery (ND)", "IGMP"])
-        if st.button("Validar Respuesta"):
-            if ans == "Neighbor Discovery (ND)":
-                st.success("¡Correcto! ND maneja el descubrimiento de routers y resolución de direcciones.")
+# --- MUNDO 2: INGENIERÍA SOCIAL ---
+elif mundo == "2. 🎭 Carnaval de las Sombras":
+    st.header("🎭 Mundo 2: Ingeniería Social")
+    st.subheader("El arte del engaño humano")
+    
+    col1, col2 = st.columns(2)
+    with col1:
+        st.markdown("### 🕵️‍♂️ Principios de Cialdini")
+        st.write("* **Autoridad:** 'Soy el CEO, hazlo ya'.")
+        st.write("* **Urgencia:** 'Tu cuenta será borrada en 1 hora'.")
+        st.write("* **Escasez:** 'Últimos 2 tickets disponibles'.")
+    
+    with col2:
+        st.markdown("### 📧 Reto: Detecta el Phishing")
+        st.code("""
+        De: soport@g0ogle.com
+        Asunto: ALERTA DE SEGURIDAD
+        Haga clic aquí para verificar su contraseña:
+        http://bit.ly/secure-google-login
+        """, language="text")
+        
+        opcion = st.radio("¿Es este correo legítimo?", ["Sí", "No, mira el remitente", "No, mira el enlace", "B y C son correctas"])
+        if st.button("Analizar Correo"):
+            if opcion == "B y C son correctas":
+                st.balloons()
+                st.success("¡CORRECTO! 'g0ogle.com' es typo-squating y el enlace es sospechoso.")
             else:
-                st.error("Incorrecto. Revisa los archivos de inteligencia.")
+                st.error("Fallaste. Has sido hackeado.")
 
-# (Aquí puedes añadir más lógica `elif` para los otros mundos más adelante)
+# --- MUNDO 3: HACKING WEB ---
+elif mundo == "3. 🏛️ Laberinto Web":
+    st.header("🏛️ Mundo 3: Inyección SQL")
+    st.markdown("El servidor interpreta tu input como código.")
+    
+    st.subheader("💉 Laboratorio: SQL Injection (Login Bypass)")
+    st.write("Objetivo: Entrar como 'admin' sin saber la contraseña.")
+    
+    usuario = st.text_input("Usuario:", placeholder="Intenta: admin' OR '1'='1")
+    password = st.text_input("Contraseña:", type="password")
+    
+    # Simulador de Backend SQL Vulnerable
+    query = f"SELECT * FROM users WHERE user = '{usuario}' AND pass = '{password}'"
+    
+    st.markdown("**Consulta que ejecuta el servidor:**")
+    st.code(query, language="sql")
+    
+    if st.button("Login"):
+        if "OR '1'='1" in usuario or "OR 1=1" in usuario:
+            st.success("🔓 ¡ACCESO CONCEDIDO! Has manipulado la lógica booleana.")
+            st.json({"id": 1, "user": "admin", "role": "root", "secret": "FLAG{SQLI_MASTER}"})
+        elif usuario == "admin" and password == "1234":
+             st.warning("Acceso denegado. Contraseña incorrecta.")
+        else:
+            st.error("Acceso denegado.")
+
+# --- MUNDO 5: EXPLOITS (Deep Dive) ---
+elif mundo == "5. 🔨 Taller de Exploits":
+    st.header("🔨 Mundo 5: Buffer Overflows")
+    st.write("Este módulo contiene material avanzado extraído de 'The Shellcoder's Handbook'.")
+    with st.expander("📖 Ver Anatomía del Stack"):
+        st.code("""
+        [ High Memory ]
+        +----------------+
+        | Return Address |  <-- OBJETIVO (EIP)
+        +----------------+
+        |   Saved EBP    |
+        +----------------+
+        |   Buffer A     |  <-- Entrada de datos
+        +----------------+
+        [ Low Memory  ]
+        """, language="text")
+        st.write("Si escribes más datos de los que caben en Buffer A, sobrescribes EBP y luego RET.")
+
+elif mundo == "Inicio":
+    st.write("Bienvenido al sistema central. Selecciona una misión.")
+    st.progress(0)
+
 else:
-    st.warning("🔒 Módulo encriptado. Desbloquea niveles anteriores o contribuye al código para acceder.")
+    st.info("🚧 Módulo en construcción. Revisa los archivos .md en el repositorio.")
