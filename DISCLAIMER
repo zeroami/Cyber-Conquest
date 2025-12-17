@@ -1,0 +1,321 @@
+# 🇪🇸 Español
+
+# ⚠️ AVISO LEGAL Y EXENCIÓN DE RESPONSABILIDAD
+
+**POR FAVOR, LEA ESTO ANTES DE UTILIZAR CUALQUIER RECURSO DE ESTE REPOSITORIO.**
+
+Este proyecto (**Cyber-Conquest**) ha sido creado exclusivamente con **fines educativos, académicos y de investigación en ciberseguridad**. El objetivo es ayudar a los profesionales de la seguridad, administradores de sistemas y estudiantes a entender cómo funcionan las vulnerabilidades para poder defenderse de ellas.
+
+### Términos de Uso:
+1.  **Entornos Controlados:** Todos los scripts, técnicas y demostraciones deben ejecutarse **únicamente** en sistemas de su propiedad (laboratorios locales, máquinas virtuales) o en redes donde tenga **autorización explícita y por escrito** del propietario.
+2.  **Prohibición de Actos Ilegales:** Está estrictamente prohibido utilizar este material para acceder sin autorización, dañar, interrumpir o interceptar sistemas, redes o datos de terceros.
+3.  **Exención de Responsabilidad:** El autor y los colaboradores de este repositorio **no se hacen responsables** del mal uso de la información aquí contenida, ni de los daños directos o indirectos causados por el uso de estas herramientas.
+4.  **Cumplimiento Legal:** Es responsabilidad del usuario final cumplir con todas las leyes locales, estatales e internacionales aplicables en su jurisdicción.
+
+**Si usted no está de acuerdo con estos términos o planea usar este conocimiento para actividades maliciosas, abandone este repositorio inmediatamente.**
+
+__________________________________________________________________________________
+
+# 🇬🇧 English
+
+# ⚠️ LEGAL DISCLAIMER AND WARNING
+
+**PLEASE READ THIS BEFORE USING ANY RESOURCES IN THIS REPOSITORY.**
+
+This project (**Cyber-Conquest**) has been created exclusively for **educational, academic, and cybersecurity research purposes**. The goal is to help security professionals, system administrators, and students understand how vulnerabilities work in order to defend against them.
+
+### Terms of Use:
+1.  **Controlled Environments:** All scripts, techniques, and demonstrations must be executed **only** on systems you own (local labs, virtual machines) or on networks where you have **explicit written authorization** from the owner.
+2.  **No Illegal Acts:** Using this material to access without authorization, damage, disrupt, or intercept third-party systems, networks, or data is strictly prohibited.
+3.  **Liability Waiver:** The author and contributors of this repository **are not responsible** for any misuse of the information contained herein, nor for any direct or indirect damage caused by the usage of these tools.
+4.  **Legal Compliance:** It is the end user's responsibility to comply with all applicable local, state, and international laws in their jurisdiction.
+
+**If you do not agree with these terms or plan to use this knowledge for malicious activities, please leave this repository immediately.**
+
+__________________________________________________________________________________
+
+# 🇫🇷 Français
+
+# ⚠️ AVIS DE NON-RESPONSABILITÉ
+
+**VEUILLEZ LIRE CECI AVANT D'UTILISER TOUTE RESSOURCE DE CE DÉPÔT.**
+
+Ce projet (**Cyber-Conquest**) a été créé exclusivement à des **fins éducatives, académiques et de recherche en cybersécurité**. L'objectif est d'aider les professionnels de la sécurité à comprendre le fonctionnement des vulnérabilités afin de mieux s'en défendre.
+
+### Conditions d'Utilisation :
+1.  **Environnements Contrôlés :** Tous les scripts doivent être exécutés **uniquement** sur des systèmes vous appartenant ou sur des réseaux pour lesquels vous disposez d'une **autorisation écrite explicite**.
+2.  **Interdiction d'Actes Illégaux :** Il est strictement interdit d'utiliser ce matériel pour accéder sans autorisation, endommager ou intercepter des systèmes tiers.
+3.  **Exclusion de Responsabilité :** L'auteur **n'est pas responsable** de la mauvaise utilisation des informations contenues ici, ni des dommages causés par l'utilisation de ces outils.
+4.  **Conformité Légale :** Il incombe à l'utilisateur de respecter toutes les lois applicables dans sa juridiction.
+
+__________________________________________________________________________________
+
+# 🇩🇪 Deutsch
+
+# ⚠️ RECHTLICHER HINWEIS UND HAFTUNGSAUSSCHLUSS
+
+**BITTE LESEN SIE DIES VOR DER VERWENDUNG DIESES REPOSITORIES.**
+
+Dieses Projekt (**Cyber-Conquest**) dient ausschließlich **Bildungs- und Forschungszwecken**. Ziel ist es, Sicherheitsexperten zu helfen, Schwachstellen zu verstehen, um sich zu verteidigen.
+
+### Nutzungsbedingungen:
+1.  **Kontrollierte Umgebungen:** Alle Skripte dürfen **nur** auf eigenen Systemen oder mit **ausdrücklicher schriftlicher Genehmigung** des Eigentümers ausgeführt werden.
+2.  **Verbot illegaler Handlungen:** Die Verwendung dieses Materials für unbefugten Zugriff oder Schaden an Dritten ist strengstens untersagt.
+3.  **Haftungsausschluss:** Der Autor **übernimmt keine Haftung** für Missbrauch oder Schäden, die durch diese Tools entstehen.
+4.  **Gesetzeskonformität:** Der Benutzer ist für die Einhaltung aller geltenden Gesetze verantwortlich.
+
+__________________________________________________________________________________
+
+# 🇵🇹 Português
+
+# ⚠️ AVISO LEGAL E ISENÇÃO DE RESPONSABILIDADE
+
+**LEIA ISTO ANTES DE USAR QUALQUER RECURSO DESTE REPOSITÓRIO.**
+
+Este projeto (**Cyber-Conquest**) foi criado exclusivamente para **fins educacionais e de pesquisa**. O objetivo é ajudar profissionais a entender vulnerabilidades para defesa.
+
+### Termos de Uso:
+1.  **Ambientes Controlados:** Use **apenas** em sistemas próprios ou onde tenha **autorização explícita e por escrito**.
+2.  **Proibição de Atos Ilegais:** É estritamente proibido usar este material para acessar sem autorização ou danificar sistemas de terceiros.
+3.  **Isenção de Responsabilidade:** O autor **não se responsabiliza** pelo uso indevido ou danos causados por estas ferramentas.
+4.  **Conformidade Legal:** É responsabilidade do usuário cumprir todas as leis locais aplicáveis.
+
+__________________________________________________________________________________
+
+# 🇮🇹 Italiano
+
+# ⚠️ DISCLAIMER LEGALE
+
+**LEGGERE ATTENTAMENTE PRIMA DELL'USO.**
+
+Questo progetto (**Cyber-Conquest**) è stato creato esclusivamente a **scopo educativo e di ricerca**. L'obiettivo è aiutare i professionisti a comprendere le vulnerabilità per difendersi.
+
+### Termini di Utilizzo:
+1.  **Ambienti Controllati:** Eseguire gli script **solo** su sistemi di proprietà o con **autorizzazione scritta esplicita**.
+2.  **Divieto di Atti Illegali:** È severamente vietato utilizzare questo materiale per accessi non autorizzati o danni a terzi.
+3.  **Esonero di Responsabilità:** L'autore **non è responsabile** per l'uso improprio o per danni causati da questi strumenti.
+4.  **Conformità Legale:** L'utente è responsabile del rispetto delle leggi vigenti.
+
+__________________________________________________________________________________
+
+# 🇷🇺 Русский
+
+# ⚠️ ЮРИДИЧЕСКОЕ УВЕДОМЛЕНИЕ
+
+**ПОЖАЛУЙСТА, ПРОЧИТАЙТЕ ПЕРЕД ИСПОЛЬЗОВАНИЕМ.**
+
+Этот проект (**Cyber-Conquest**) создан исключительно в **образовательных и исследовательских целях**.
+
+### Условия использования:
+1.  **Контролируемая среда:** Используйте скрипты **только** на собственных системах или при наличии **письменного разрешения**.
+2.  **Запрет незаконных действий:** Строго запрещено использовать эти материалы для несанкционированного доступа или нанесения вреда третьим лицам.
+3.  **Отказ от ответственности:** Автор **не несет ответственности** за неправомерное использование информации или ущерб.
+4.  **Соблюдение законов:** Пользователь несет ответственность за соблюдение местного законодательства.
+
+__________________________________________________________________________________
+
+# 🇨🇳 中文
+
+# ⚠️ 免责声明
+
+**使用前请阅读。**
+
+本项目 (**Cyber-Conquest**) 仅用于**教育和网络安全研究目的**。旨在帮助专业人士了解漏洞以进行防御。
+
+### 使用条款：
+1.  **受控环境：** 仅可在您拥有的系统上或在获得**明确书面授权**的网络中运行脚本。
+2.  **禁止非法行为：** 严禁使用本资料进行未经授权的访问或破坏第三方系统。
+3.  **免责条款：** 作者对任何滥用本信息或造成的损害**不承担责任**。
+4.  **法律合规：** 用户有责任遵守所有适用的法律法规。
+
+__________________________________________________________________________________
+
+# 🇯🇵 日本語
+
+# ⚠️ 法的免責事項
+
+**使用前にお読みください。**
+
+このプロジェクト（**Cyber-Conquest**）は、**教育およびサイバーセキュリティ研究のみを目的**として作成されました。
+
+### 利用規約：
+1.  **管理された環境：** スクリプトは、自身が所有するシステム、または所有者からの**書面による明示的な許可**がある場合のみ実行してください。
+2.  **違法行為の禁止：** 第三者のシステムへの不正アクセスや損害を与える行為は固く禁じられています。
+3.  **免責：** 作成者は、本情報の悪用や損害について**一切の責任を負いません**。
+4.  **法令遵守：** 適用されるすべての法律を遵守することはユーザーの責任です。
+
+__________________________________________________________________________________
+
+# 🇰🇷 한국어
+
+# ⚠️ 법적 고지 및 면책 조항
+
+**사용 전 필독해 주십시오.**
+
+이 프로젝트(**Cyber-Conquest**)는 오직 **교육 및 보안 연구 목적**으로만 제작되었습니다.
+
+### 사용 약관:
+1.  **통제된 환경:** 본인의 시스템이나 소유자의 **명시적인 서면 허가**가 있는 네트워크에서만 실행하십시오.
+2.  **불법 행위 금지:** 타인의 시스템에 무단 접근하거나 피해를 주는 행위는 엄격히 금지됩니다.
+3.  **면책:** 작성자는 이 정보의 오용이나 발생한 피해에 대해 **책임을 지지 않습니다**.
+4.  **법적 준수:** 해당 지역의 법률을 준수하는 것은 사용자의 책임입니다.
+
+__________________________________________________________________________________
+
+# 🇸🇦 العربية
+
+# ⚠️ إخلاء المسؤولية القانونية
+
+**يرجى القراءة قبل الاستخدام.**
+
+تم إنشاء هذا المشروع (**Cyber-Conquest**) حصريًا **لأغراض تعليمية وبحثية**.
+
+### شروط الاستخدام:
+1.  **بيئات خاضعة للرقابة:** يجب تنفيذ النصوص البرمجية **فقط** على أنظمتك الخاصة أو بتصريح **كتابي صريح** من المالك.
+2.  **حظر الأعمال غير القانونية:** يُحظر تمامًا استخدام هذه المواد للوصول غير المصرح به أو إلحاق الضرر بالآخرين.
+3.  **إخلاء المسؤولية:** المؤلف **غير مسؤول** عن أي سوء استخدام للمعلومات أو أي أضرار ناتجة.
+4.  **الامتثال القانوني:** يتحمل المستخدم مسؤولية الامتثال لجميع القوانين المعمول بها.
+
+__________________________________________________________________________________
+
+# 🇮🇳 हिन्दी
+
+# ⚠️ कानूनी अस्वीकरण
+
+**कृपया उपयोग करने से पहले पढ़ें।**
+
+यह प्रोजेक्ट (**Cyber-Conquest**) केवल **शैक्षिक और अनुसंधान उद्देश्यों** के लिए बनाया गया है।
+
+### उपयोग की शर्तें:
+1.  **नियंत्रित वातावरण:** स्क्रिप्ट का उपयोग केवल अपने सिस्टम पर या मालिक की **लिखित अनुमति** के साथ करें।
+2.  **अवैध कृत्य निषिद्ध:** बिना अनुमति के किसी तीसरे पक्ष के सिस्टम तक पहुंचने के लिए इसका उपयोग करना सख्त मना है।
+3.  **दायित्व से छूट:** लेखक जानकारी के किसी भी दुरुपयोग या उससे होने वाले नुकसान के लिए **जिम्मेदार नहीं** है।
+4.  **कानूनी अनुपालन:** सभी लागू कानूनों का पालन करना उपयोगकर्ता की जिम्मेदारी है।
+
+__________________________________________________________________________________
+
+# 🇹🇷 Türkçe
+
+# ⚠️ YASAL UYARI
+
+**KULLANMADAN ÖNCE LÜTFEN OKUYUN.**
+
+Bu proje (**Cyber-Conquest**) sadece **eğitim ve araştırma amaçlı** oluşturulmuştur.
+
+### Kullanım Şartları:
+1.  **Kontrollü Ortamlar:** Sadece kendi sistemlerinizde veya sahibinden **yazılı izin** aldığınız ağlarda kullanın.
+2.  **Yasa Dışı Eylemler Yasaktır:** Üçüncü şahıslara yetkisiz erişim veya zarar vermek kesinlikle yasaktır.
+3.  **Sorumluluk Reddi:** Yazar, bu bilgilerin kötüye kullanımından **sorumlu değildir**.
+4.  **Yasal Uyumluluk:** Yasalara uymak kullanıcının sorumluluğundadır.
+
+__________________________________________________________________________________
+
+# 🇳🇱 Nederlands
+
+# ⚠️ JURIDISCHE DISCLAIMER
+
+**LEES DIT VOOR GEBRUIK.**
+
+Dit project (**Cyber-Conquest**) is uitsluitend gemaakt voor **educatieve en onderzoeksdoeleinden**.
+
+### Gebruiksvoorwaarden:
+1.  **Gecontroleerde Omgevingen:** Gebruik scripts **alleen** op eigen systemen of met **schriftelijke toestemming**.
+2.  **Geen Illegale Handelingen:** Ongeautoriseerde toegang tot derden is ten strengste verboden.
+3.  **Aansprakelijkheid:** De auteur is **niet verantwoordelijk** voor misbruik of schade.
+4.  **Wettelijke Naleving:** De gebruiker moet voldoen aan de lokale wetgeving.
+
+__________________________________________________________________________________
+
+# 🇵🇱 Polski
+
+# ⚠️ NOTA PRAWNA
+
+**PRZECZYTAJ PRZED UŻYCIEM.**
+
+Ten projekt (**Cyber-Conquest**) powstał wyłącznie w **celach edukacyjnych i badawczych**.
+
+### Warunki Użytkowania:
+1.  **Środowiska Kontrolowane:** Używaj **tylko** na własnych systemach lub za **pisemną zgodą** właściciela.
+2.  **Zakaz Nielegalnych Działań:** Nieautoryzowany dostęp do systemów osób trzecich jest surowo zabroniony.
+3.  **Wyłączenie Odpowiedzialności:** Autor **nie ponosi odpowiedzialności** za niewłaściwe użycie lub szkody.
+4.  **Zgodność z Prawem:** Użytkownik odpowiada za przestrzeganie prawa.
+
+__________________________________________________________________________________
+
+# 🇸🇪 Svenska
+
+# ⚠️ ANSVARSFRISKRIVNING
+
+**LÄS DETTA FÖRE ANVÄNDNING.**
+
+Detta projekt (**Cyber-Conquest**) har skapats uteslutande för **utbildnings- och forskningsändamål**.
+
+### Användarvillkor:
+1.  **Kontrollerade Miljöer:** Används **endast** på egna system eller med **skriftligt tillstånd**.
+2.  **Inga Olagliga Handlingar:** Obehörig åtkomst till tredje part är strängt förbjudet.
+3.  **Ansvarsfrihet:** Författaren är **inte ansvarig** för missbruk eller skador.
+4.  **Laglydnad:** Användaren ansvarar för att följa lagen.
+
+__________________________________________________________________________________
+
+# 🇮🇩 Bahasa Indonesia
+
+# ⚠️ PENYANGKALAN HUKUM
+
+**BACA SEBELUM MENGGUNAKAN.**
+
+Proyek ini (**Cyber-Conquest**) dibuat khusus untuk **tujuan pendidikan dan penelitian**.
+
+### Syarat Penggunaan:
+1.  **Lingkungan Terkendali:** Gunakan **hanya** pada sistem Anda sendiri atau dengan **izin tertulis**.
+2.  **Dilarang Tindakan Ilegal:** Akses tidak sah ke pihak ketiga sangat dilarang.
+3.  **Pembebasan Tanggung Jawab:** Penulis **tidak bertanggung jawab** atas penyalahgunaan atau kerusakan.
+4.  **Kepatuhan Hukum:** Pengguna bertanggung jawab mematuhi hukum yang berlaku.
+
+__________________________________________________________________________________
+
+# 🇻🇳 Tiếng Việt
+
+# ⚠️ TUYÊN BỐ MIỄN TRỪ TRÁCH NHIỆM
+
+**VUI LÒNG ĐỌC TRƯỚC KHI SỬ DỤNG.**
+
+Dự án này (**Cyber-Conquest**) được tạo ra chỉ nhằm **mục đích giáo dục và nghiên cứu**.
+
+### Điều khoản sử dụng:
+1.  **Môi trường được kiểm soát:** Chỉ chạy trên hệ thống của bạn hoặc khi có **giấy phép bằng văn bản**.
+2.  **Cấm hành vi bất hợp pháp:** Nghiêm cấm truy cập trái phép vào hệ thống của bên thứ ba.
+3.  **Miễn trừ trách nhiệm:** Tác giả **không chịu trách nhiệm** về việc sử dụng sai mục đích.
+4.  **Tuân thủ pháp luật:** Người dùng chịu trách nhiệm tuân thủ pháp luật.
+
+__________________________________________________________________________________
+
+# 🇹🇭 ภาษาไทย
+
+# ⚠️ ข้อปฏิเสธความรับผิดทางกฎหมาย
+
+**โปรดอ่านก่อนใช้งาน**
+
+โปรเจกต์นี้ (**Cyber-Conquest**) สร้างขึ้นเพื่อ **การศึกษาและการวิจัย** เท่านั้น
+
+### เงื่อนไขการใช้งาน:
+1.  **สภาพแวดล้อมที่ควบคุม:** ใช้งานบนระบบของคุณเองหรือเมื่อได้รับ **อนุญาตเป็นลายลักษณ์อักษร** เท่านั้น
+2.  **ห้ามกระทำผิดกฎหมาย:** ห้ามใช้เจาะระบบของบุคคลที่สามโดยไม่ได้รับอนุญาตโดยเด็ดขาด
+3.  **การยกเว้นความรับผิด:** ผู้เขียน **ไม่รับผิดชอบ** ต่อการใช้งานในทางที่ผิดหรือความเสียหายใดๆ
+4.  **การปฏิบัติตามกฎหมาย:** ผู้ใช้มีหน้าที่ปฏิบัติตามกฎหมายที่เกี่ยวข้อง
+
+__________________________________________________________________________________
+
+# 🇺🇦 Українська
+
+# ⚠️ ЮРИДИЧНЕ ЗАСТЕРЕЖЕННЯ
+
+**БУДЬ ЛАСКА, ПРОЧИТАЙТЕ ПЕРЕД ВИКОРИСТАННЯМ.**
+
+Цей проект (**Cyber-Conquest**) створено виключно в **освітніх та дослідницьких цілях**.
+
+### Умови використання:
+1.  **Контрольоване середовище:** Використовуйте **тільки** на власних системах або за наявності **письмового дозволу**.
+2.  **Заборона незаконних дій:** Суворо заборонено використовувати для несанкціонованого доступу до третіх осіб.
+3.  **Відмова від відповідальності:** Автор **не несе відповідальності** за зловживання інформацією.
+4.  **Дотримання законів:** Користувач несе відповідальність за дотримання законодавства.
