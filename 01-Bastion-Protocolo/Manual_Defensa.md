@@ -1,4 +1,4 @@
-```markdown
+
 # 🛡️ Bastión y Protocolo: Manual de Defensa de Red
 
 > [!IMPORTANT]
@@ -170,8 +170,6 @@ La defensa efectiva no depende de una herramienta mágica, sino de la **suma de 
 4. Una monitorización que el atacante no pueda borrar.
 
 ```
-
----
 
 **Siguiente paso sugerido:**
 ¿Te gustaría que apliquemos esta misma estructura profesional al **Mundo 2 (Ingeniería Social)** o prefieres que revisemos cómo desplegar este contenido en tu web?
