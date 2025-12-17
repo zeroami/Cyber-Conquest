@@ -39,8 +39,7 @@ chattr +i /etc/sudoers
 Uso de chattr +a (Solo Anexión)
 El atributo a (append-only) es crucial para la integridad forense, ya que permite que los datos se escriban solo al final del archivo, impidiendo que el contenido existente sea modificado o eliminado. Este atributo es indispensable para los archivos de registro (log files).
 Ejemplos de Código para Logs Inmutables:
-# Aplicar el atributo 'a' a logs críticos para asegurar
-# que los atacantes no puedan borrar entradas, solo añadir nuevas.
+# Aplicar el atributo 'a' a logs críticos para asegurar que los atacantes no puedan borrar entradas, solo añadir nuevas.
 chattr +a /var/log/syslog
 chattr +a /var/log/messages
 chattr +a /var/log/secure
