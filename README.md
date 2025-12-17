@@ -60,7 +60,7 @@ Este repositorio incluye una aplicación interactiva en Python (`Streamlit`) par
 
 ```bash
 # Clonar el repositorio
-git clone [https://github.com/TU_USUARIO/cyber-conquest.git](https://github.com/TU_USUARIO/cyber-conquest.git)
+git clone [https://github.com/zeroami/cyber-conquest.git](https://github.com/zeroami/cyber-conquest.git)
 
 # Entrar en el directorio
 cd cyber-conquest
